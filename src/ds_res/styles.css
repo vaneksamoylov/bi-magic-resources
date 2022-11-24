@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "HeliosCond";
+  src: url("HeliosCondRegular.woff") format("woff"),
+  url("HeliosCondRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "HeliosCond";
+  src: url("HeliosCondBold.woff") format("woff"),
+  url("HeliosCondBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "HeliosCondC";
+  src: url('../../../assets/fonts/HeliosCondC/helioscondc-webfont.eot');
+  src: url('../../../assets/fonts/HeliosCondC/helioscondc-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../../../assets/fonts/HeliosCondC/helioscondc-webfont.woff2') format('woff2'),
+  url('../../../assets/fonts/HeliosCondC/helioscondc-webfont.woff') format('woff'),
+  url('../../../assets/fonts/HeliosCondC/helioscondc-webfont.ttf') format('truetype'),
+  url('../../../assets/fonts/HeliosCondC/helioscondc-webfont.svg#helioscondcregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HeliosCondC";
+  src: url('../../../assets/fonts/HeliosCondC/helioscondc-bold1-webfont.eot');
+  src: url('../../../assets/fonts/HeliosCondC/helioscondc-bold1-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../../../assets/fonts/HeliosCondC/helioscondc-bold1-webfont.woff2') format('woff2'),
+  url('../../../assets/fonts/HeliosCondC/helioscondc-bold1-webfont.woff') format('woff'),
+  url('../../../assets/fonts/HeliosCondC/helioscondc-bold1-webfont.ttf') format('truetype'),
+  url('../../../assets/fonts/HeliosCondC/helioscondc-bold1-webfont.svg#helioscondcbold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: #0e283d;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  font-family: 'HeliosCondC', 'Arial', sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.HeaderTabs {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+  font-size: 1.0rem;
+}
+
+.HeaderTab {
+  background: #455d70;
+  border-bottom-left-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  line-height: 17px;
+  text-rendering: geometricPrecision;
+}
+
+.HeaderTab.active {
+  background: #2b373f;
+  cursor: default;
+}
+
+.capex-val-item {
+  padding: 4px;
+}
+
+.capex-val-minus {
+  color: #f1194e;
+}
+
+.capex-val-plus {
+  color: #00ae6a;
+}
+.iScrollIndicator {
+  border-color: rgba(255,255,255, 0.2) !important;
+}
+.expandVizel {
+  fill: #677689;
+  display: none;
+  position: absolute;
+  z-index: 100000;
+  right: 5px;
+  top: 5px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.dark .expandVizel {
+  fill: #fff;
+}

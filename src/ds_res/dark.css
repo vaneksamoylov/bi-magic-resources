@@ -1,0 +1,29 @@
+html {
+  background: #273445 !important;
+  color: #ffffff;
+}
+
+.dark th {
+  background-color: #324051;
+  border-left: 1px solid #3E4C5E;
+  color: #A1ACBD;
+}
+.dark td {
+  border-left: 1px solid #3E4C5E;
+  border-bottom: 1px solid #3E4C5E;
+  color: #fff;
+}
+.dark th:first-child {
+  border-left: none;
+  border-bottom: none;
+}
+.dark th,.dark  td {
+  padding: 15px 10px;
+  border-left: 1px solid #3E4C5E;
+}
+.dark td:first-child {
+  border-left: none;
+}
+.dark tr:last-child td {
+  border-bottom: none;
+}

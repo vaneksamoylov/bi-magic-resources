@@ -1,0 +1,15 @@
+html {
+  background: white;
+  color: #607090;
+}
+
+table td:nth-child(n+2) {
+  border-left:2px solid #e6e8ea;
+}
+
+table tr:nth-child(2n+2) {
+  background: #eceef0;
+}
+
+
+

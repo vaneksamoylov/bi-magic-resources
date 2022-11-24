@@ -1,0 +1,105 @@
+{
+  "id": 45,
+  "parent_id": null,
+  "dashboard_id": 12,
+  "view_class": "/plot",
+  "title": null,
+  "description": null,
+  "layout": null,
+  "length": null,
+  "idx": 0,
+  "srt": 2147483647,
+  "config": {
+    "frame": {
+      "h": 1,
+      "w": 1,
+      "x": 0,
+      "y": 1
+    },
+    "legend": {
+      "21": {},
+      "772": {},
+      "773": {}
+    },
+    "display": {
+      "sort": "DESC",
+      "legend": {
+        "align": "right",
+        "style": {
+          "overflow": "hidden"
+        },
+        "width": 160,
+        "layout": "vertical",
+        "useHTML": true,
+        "itemStyle": {
+          "width": 100
+        },
+        "labelFormat": "<div data-tooltip='{userOptions.description}' data-tooltip-direction='left' style='display:inline-block;width:100px;height:43px;white-space: normal;'>{name}</div>",
+        "verticalAlign": "middle"
+      },
+      "sortBy": 21,
+      "excludeY": [
+        "21"
+      ],
+      "stoplight": {
+        "lights": []
+      },
+      "marginLeft": 100,
+      "marginRight": 210
+    },
+    "options": [
+      "DrillDownByLocations",
+      "DisplayAllBadges",
+      "HideVAxisTickMarks",
+      "HideXAxisTickMarks"
+    ],
+    "chartStyle": "Line",
+    "dataSource": {
+      "style": {
+        "metrics": {
+          "772": {
+            "color": "#ffb482",
+            "display": {
+              "badges": {
+                "align": "right",
+                "format": "{point.y:,.1f}",
+                "enabled": true,
+                "padding": 1,
+                "formatter": null,
+                "borderWidth": 0,
+                "allowOverlap": false,
+                "verticalAlign": "top"
+              }
+            },
+            "widgetType": "line"
+          },
+          "773": {
+            "color": "#c4c4c4",
+            "display": {
+              "badges": {
+                "align": "right",
+                "format": "{point.y:,.0f} %",
+                "enabled": true,
+                "padding": 1,
+                "formatter": null,
+                "borderWidth": 0,
+                "allowOverlap": false,
+                "verticalAlign": "bottom"
+              }
+            },
+            "widgetType": "column"
+          }
+        }
+      },
+      "xAxis": "locations",
+      "metrics": [
+        773,
+        772,
+        21
+      ]
+    },
+    "onClickDataPoint": "ShowDrillDownMenu"
+  },
+  "updated": "2018-03-22T20:22:39.948493+03:00",
+  "created": "2017-11-05T23:08:27.617428+03:00"
+}
